@@ -7,8 +7,8 @@
 
 class Person{
 	constructor(name, age){
-		this.name=name
-		this.age=age
+		this.name = name
+		this.age = age
 	}
 
 	greet(){
@@ -18,14 +18,14 @@ class Person{
 
 
 class Employee extends Person{
-	constructor(name,age,jobTitle){
+	constructor(name, age, jobTitle){
 		this.name = name
 		this.age = age
 		this.jobTitle = jobTitle
 	}
 
 	jobGreet(){
-		console.log(`Hello, my name is ${name}, I am ${age} years old, and my job title is ${jobTitle}.`)
+		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`)
 	}
 }
 
